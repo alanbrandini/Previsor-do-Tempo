@@ -1,0 +1,13 @@
+https://circuits.io/circuits/3711957-projeto-final-ma#schematic
+
+20/01/2017:
+	- Added Arduino Microcontroler;
+	- Added Stepper Motor;
+	- Added Arduino Wi-Fi Shield (ESP 8266);
+	- Added Presence Sensor.
+	
+	INCOMPLETE VERSION
+
+TO DO:
+	- Add ULN2003A (for Stepper control);
+	- Fix some wires for ESP.
