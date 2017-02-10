@@ -1,4 +1,4 @@
-https://circuits.io/circuits/3711957-projeto-final-ma#schematic
+https://circuits.io/circuits/3964972-projeto-final-ma
 
 20/01/2017:
 	- Added Arduino Microcontroler;
@@ -7,7 +7,13 @@ https://circuits.io/circuits/3711957-projeto-final-ma#schematic
 	- Added Presence Sensor.
 	
 	INCOMPLETE VERSION
-
-TO DO:
-	- Add ULN2003A (for Stepper control);
-	- Fix some wires for ESP.
+	
+10/02/2017:
+	- Removed Arduino Wi-Fi Shield (ESP 8266);
+	- Added Pushbutton;
+	- Added LCD RGB Backlight 16x2;
+	- Added CI ULN2003A;
+	- Added Power Supply 5V DC;
+	- Added 1kOhm resistence (for Pushbutton).
+	
+	COMPLETE VERSION
