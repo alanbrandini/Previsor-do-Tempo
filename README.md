@@ -67,4 +67,22 @@ Após isto, colocamos um sensor de presença, que ao detectar movimento conecta-
 
 Inicialmente, somente seria um motor movendo um ponteiro indicando que roupa utilizar ao sair de casa. Entretanto, com a facilidade da utilização do LCD e do Shield I2C, evoluiu-se o projeto a fim de aumentar o número de informações apresentadas e de funcionalidades: o motor passou a abrir e fechar a janela e o LCD apresenta temperaturas para diferentes (3) cidades, bem como o _status_ da conexão com a API.
 
+# Esquemático
+
+Abaixo, encontra-se o esquemático do projeto.
+
+![Esquemático do circuito.](https://github.com/alanbrandini/Previsor-do-Tempo/blob/master/Imagens/Schematics.PNG)
+
+# Vídeos do projeto
+
+Vídeos demonstrando o funcionamento do **Previsor do Tempo**:
+
+**Protótipo - Versão 1:**
+
+[![Protótipo.](https://img.youtube.com/vi/2eu-Xq0VqVk/0.jpg)](https://www.youtube.com/watch?v=2eu-Xq0VqVk)
+
+**Final:**
+
+[![Circuito Final.](https://img.youtube.com/vi/0UTL0pfv9fU/0.jpg)](https://www.youtube.com/watch?v=0UTL0pfv9fU)
+
 O desenvolvimento do projeto é realizado pelos alunos **Alan R. da S. Brandini** e **Gabriel T. Caschera**, alunos do curso de **Engenharia de Computação (DC/UFSCar)**.
