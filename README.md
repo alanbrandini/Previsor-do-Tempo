@@ -55,9 +55,15 @@ O _shield ethernet_ é responsável pela conexão do sistema com o servidor _bac
 
 # Implementação
 
-**[TO DO]**
+Primeiramente foi usada uma biblioteca chamada "RestClient for Arduino" disponível pelo link: https://github.com/csquared/arduino-restclient. Nesta biblioteca usamos funções que facilitaram o uso do shield ethernet para conectar de maneira simples o arduino com uma API do yahoo que mostrava informações a respeito do tempo e do clima de uma cidade (São Carlos para o nosso caso).
 
-# Evoulução do projeto
+Com as informações obtidas da API usamos o arduino para filtrá-las e exibir apenas a temperatura atual em um display LCD. Neste passo, foi necessário também uma outra biblioteca responsável pela comunicação entre o arduino e o LCD: https://github.com/Seeed-Studio/Grove_LCD_RGB_Backlight. Aproveitando que este é um LCD que pode ter sua luz de fundo alterada, para cada faixa de temperatura uma determinada cor é mostrada. Quanto mais alta a temperatura mais avermelhada é a cor e quanto mais próximo do 0ºC mais azul é a cor de fundo.
+
+Além da temperatura, o sistema verifica se as condições climáticas informadas pela API indicam garoa, chuva, tempestade ou alguma condição relacionada. Em caso positivo o motor de passos é acionado para representar uma janela que se fecha, impedindo que a água da chuva entre naquele ambiente.
+
+Após isto, colocamos um sensor de presença, que ao detectar movimento conecta-se novamente a API para verificar se houve alguma mudança nos dados coletados e repetir todos os passos descritos anteriormente. Além disso, um botão foi colocado para que toda vez que apertado uma nova cidade seja passada aos parâmetros da API, que buscaria as informações do clima e do tempo para esta cidade na próxima busca. 
+
+# Evolução do projeto
 
 Inicialmente, somente seria um motor movendo um ponteiro indicando que roupa utilizar ao sair de casa. Entretanto, com a facilidade da utilização do LCD e do Shield I2C, evoluiu-se o projeto a fim de aumentar o número de informações apresentadas e de funcionalidades: o motor passou a abrir e fechar a janela e o LCD apresenta temperaturas para diferentes (3) cidades, bem como o _status_ da conexão com a API.
 
